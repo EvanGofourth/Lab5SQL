@@ -1,6 +1,8 @@
 <html>
 <head>
-<!-- CreateUserStyle.css -->
+<!--JavaScript for verifying the form-->
+ <script src="JavaScript.js"></script>
+
 <link rel="stylesheet" type="text/css" href="CreateUserStyle.css">
 
 <!-- Latest compiled and minified CSS -->
@@ -15,20 +17,23 @@
 </head>
 <body>
   <div class = "container">
+<form method = "POST" action = "CreateUser.php" onsubmit = "return validate();">
+
   <div class = "jumbotron">
 <h1> Create User </h1>
 <br>
 <div class = "input-group input-group-lg">
   <span class = "input-group-addon"> Your User ID</span>
-  <input type="text" class = "form-control">
+  <input type="text" class = "form-control" name = "User_ID" id = "USER_ID">
   <br>
-  </div>
-  <div class = "centeredObject">
-  <button class="btn btn-default btn-lg" role="button">Submit</button>
-  </div>
+</div>
+
+<button class="btn btn-default btn-lg" role="button" name = "SUBMIT_BUTTON" id="SUBMIT_BUTTON">Submit</button>
 
 
+
   </div>
+</form>
   </div>
 </body>
 
