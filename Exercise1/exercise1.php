@@ -45,7 +45,7 @@ if ($result = $mysqli->query($query))
 }
 else
 {
-  echo("<p>Users table could not be created.</p>");
+  echo("<p>Users table could not be created. It likely already exists.</p>");
   echo("<br>");
 }
 
@@ -65,7 +65,7 @@ if($result = $mysqli->query($query))
   }
 else
   {
-    echo("<p>Posts table could not be created.</p>");
+    echo("<p>Posts table could not be created. It likely already exists.</p>");
     echo("<br>");
   }
 
