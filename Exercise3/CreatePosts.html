@@ -1,0 +1,45 @@
+<html>
+<head>
+<!--JavaScript for verifying the form-->
+ <script src="JavaScript.js"></script>
+
+<link rel="stylesheet" type="text/css" href="CreateUserStyle.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <div class = "container">
+    <!--onsubmit = "return verify();"-->
+<form method = "POST" action = "CreatePosts.php" >
+
+  <div class = "jumbotron">
+<h1> Create Post </h1>
+<br>
+<div class = "input-group input-group-lg">
+  <span class = "input-group-addon"> Your User ID</span>
+  <input type="text" class = "form-control" name = "USER_ID" id = "USER_ID">
+  <br>
+</div>
+<div>
+  <textarea style = "height: 25%; width: 100%;" name = "POST" id = "POST"></textarea>
+</div>
+
+<button class="btn btn-default btn-lg" role="button" name = "SUBMIT_BUTTON" id="SUBMIT_BUTTON">Submit</button>
+</div>
+</form>
+
+  </div>
+  <div class = "container">
+    <h1 class = "feedbackBox" id = "feedbackBox"> </h1>
+  </div>
+</body>
+
+</html>
