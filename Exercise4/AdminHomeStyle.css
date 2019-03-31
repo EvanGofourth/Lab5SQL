@@ -1,0 +1,20 @@
+
+.Link
+{
+  color: blue;
+}
+.Link:hover
+{
+  font-size: 22pt;
+  color:black;
+}
+body
+{
+  background-color: #cfd2d6;
+}
+ul
+{
+list-style-type: square;
+font-family: helvetica;
+font-size: 18pt;
+}
