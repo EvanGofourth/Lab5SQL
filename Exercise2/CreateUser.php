@@ -18,6 +18,8 @@ else
   echo("<br>");
 }
 
+//echo $User_Id;
+
 $query = "INSERT INTO Users (user_id)" .
    " VALUES( '" .
    $User_Id .
@@ -34,7 +36,9 @@ else
   echo("<p> Failed to add to table User: ");
   echo($User_Id);
   echo("</p><br><p>");
-  echo("User already exists.</p>")
+  echo("User already exists.</p>");
 }
+
+echo("<button onclick=\"window.location.href = 'https://people.eecs.ku.edu/~e574g571/Lab5/Exercise2/CreateUser.html';\">BACK</button>");
 
 ?>
